@@ -1,6 +1,7 @@
 # Tulipan bot 🌷
 
 Bot multifuncion para Discord.
+> https://is.gd/tulipanbot <
 
 ## NUEVO!!
 
