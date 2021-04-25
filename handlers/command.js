@@ -1,6 +1,6 @@
 const { readdirSync } = require("fs");
 const ascii = require("ascii-table");
-let table = new ascii("NoClipBOT");
+let table = new ascii("TULIPAN");
 table.setHeading("Comandos", "Estado");
 
 module.exports = (client) => {

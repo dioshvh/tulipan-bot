@@ -4,8 +4,9 @@ const randomPuppy = require('random-puppy');
 const { Client, MessageEmbed } = require('discord.js');
 module.exports = {
     name: "meme",
-    category: "<:gmnc:750760163551739915> ▸ divertidos ",
-    description: "Devuelve un meme",
+    aliases: ["memes","momos"],
+    category: "<:dash_logo:832271934775361606> divertidos ",
+    description: "Envia un meme",
     run: async (client, message, args) => {
 const embed = new Discord.MessageEmbed()
 got('https://www.reddit.com/r/SpanishMeme/random/.json').then(response => {

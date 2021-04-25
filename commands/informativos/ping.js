@@ -1,9 +1,9 @@
 module.exports = {
     name: "ping",
-    category: "<:logonc:750704904972140598> ▸ informativos ",
+    category: "<:dash_logo:832271934775361606> informativos ",
     description: "Devuelve la latencia en un Ping (ms)",
     run: async (client, message, args) => {
 		let ping = Math.floor(message.client.ws.ping);
-		message.channel.send('<a:8527_discord_loading:732957843501875300> `' +ping +' ms.` desde su servidor.');
+		message.channel.send('<a:discord_loading:832264650589470741> `' +ping +' ms.` desde su servidor.');
   }
   }

@@ -1,9 +1,11 @@
 const Discord = require("discord.js");
+const { Client, MessageEmbed } = require('discord.js');
 module.exports = {
     name: "logro",
-    category: "<:gmnc:750760163551739915> ▸ divertidos ",
-    description: "Manda un logro personalizado",
-    usage: ".logro <texto>+<texto2>",
+    aliases: ["logromc","achievement"],
+    category: "<:dash_logo:832271934775361606> divertidos ",
+    description: "Logro de Minecraft",
+    usage: "logro <texto> ",
     run: async (client, message, args) => {
     function Logros() {
 		var rand = [
@@ -11,10 +13,10 @@ module.exports = {
 		];
 		return rand[Math.floor(Math.random() * rand.length)];
 		}
-    const logro = args.join(" ");
-    if(!logro) return message.channel.send('<:9902_discord_dnd:748617396381548687> |Introduzca el texto ▸ ``Ejemplo .logro "texto1+texto2"``')
+    const logro = args.join('%20');
+    if(!logro) return message.channel.send('<a:attention:763369859475832843> |Introduzca el texto ▸ ``Ejemplo logro "texo"``').then(msg => msg.delete({timeout: 5000}));
     const logroembed = new Discord.MessageEmbed()
-	  .setTitle('<a:8134_jumping_dirt:732957839504703508> ▸ Minecraft | Generador de Logros')
+	  .setTitle('Minecraft · Generador de Logros')
 	  .setImage(`https://minecraftskinstealer.com/achievement/${Logros()}/Achievement%20Get!/${logro}`);
     message.channel.send(logroembed);
   }

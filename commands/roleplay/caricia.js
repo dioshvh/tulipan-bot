@@ -1,13 +1,14 @@
 const Discord = require("discord.js");
 const { Client, MessageEmbed } = require('discord.js');
 module.exports = {
-    name: "acariciar",
-    category: "<:rpbot:751008542265311282> ▸ roleplay ",
+    name: "caricia",
+  aliases: ["acariciar"],
+  category: "<:dash_logo:832271934775361606> roleplay ",
     description: "Hazle caricias a un usuario",
     usage: "acariciar <usuario>",
     run: async (client, message, args) => {
     let user = message.mentions.users.first(); 
-    if (!user) return message.channel.send("<:usnc:750762153669034034> |Por favor mencione un usuario.");
+    if (!user) return message.channel.send("<a:uncheck_raveninha:832234474883645460> |Por favor mencione un usuario.");
     if (user.id === message.author.id) return message.channel.send("Será dificil que te hagas caricias a ti mismo o.o");
 
 		var list = [

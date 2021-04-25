@@ -3,9 +3,10 @@ const client = new Discord.Client();
 const canvacord = require("canvacord");
 module.exports = {
     name: "trigger",
-    category: "<:gmnc:750760163551739915> ▸ divertidos ",
+    aliases: ["tiggrered"],
+    category: "<:dash_logo:832271934775361606> divertidos ",
     description: "Manda tu avatar modificado",
-    usage: ".trigger <usuario>",
+    usage: "trigger <usuario>",
     run: async (client, message, args) => {
       let user;
       if (message.mentions.users.first()) {
