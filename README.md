@@ -9,5 +9,5 @@ Bot multifuncion para Discord.
 
 ## COMANDOS
 
-* `!comandos` - manda la lista de comandos
-* `!ayuda <comando>` - manda informacion detallada y el uso correcto del comando
+* `t!comandos` - manda la lista de comandos
+* `t!ayuda <comando>` - manda informacion detallada y el uso correcto del comando
