@@ -5,7 +5,7 @@ Bot multifuncion para Discord.
 
 ## NUEVO!!
 
-* Hemos añadido comandos de musica
+* Hemos añadido comandos de música
 
 ## COMANDOS
 
